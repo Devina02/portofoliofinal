@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>DEVINA PORTOFOLIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    .card-scale {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="flex">
+  <div class="w-full bg-[#a3d0b1] relative flex">
+    <!-- Sidebar -->
+    <aside class="fixed top-0 left-0 h-screen w-[220px] bg-[#a3d0b1] border-r border-black p-6 flex flex-col gap-6 z-10">
+      <div class="flex items-center gap-2 mb-6">
+        <div aria-label="Portfolio logo" class="border border-black p-2 flex items-center justify-center w-10 h-10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect fill="white" height="14" rx="2" ry="2" stroke="black" stroke-width="2" width="20" x="2" y="5"></rect>
+            <path d="M8 9h8M8 13h8M8 17h8" stroke="black" stroke-linecap="round" stroke-width="2"></path>
+            <path d="M6 7v10M18 7v10" stroke="black" stroke-linecap="round" stroke-width="2"></path>
+          </svg>
+        </div>
+        <span class="font-bold text-lg select-none">PORTFOLIO</span>
+      </div>
+      <nav class="flex flex-col gap-4 text-[13px] font-semibold select-none">
+        <a class="flex items-center gap-2 bg-black text-[#f9f6e8] font-semibold px-3 py-2" href="#">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </a>
+        <a class="flex items-center gap-2 text-black hover:text-black" href="#">
+          <i class="fas fa-briefcase"></i>
+          <span>Work</span>
+        </a>
+        <a class="flex items-center gap-2 text-black hover:text-black" href="#">
+          <i class="fas fa-clipboard-list"></i>
+          <span>Internship</span>
+        </a>
+        <a class="flex items-center gap-2 text-black hover:text-black" href="#">
+          <i class="fas fa-code"></i>
+          <span>Projects</span>
+        </a>
+        <a class="flex items-center gap-2 text-black hover:text-black" href="#">
+          <i class="fas fa-handshake"></i>
+          <span>Committee</span>
+        </a>
+        <a class="flex items-center gap-2 text-black hover:text-black" href="#">
+          <i class="fas fa-users"></i>
+          <span>Organisational</span>
+        </a>
+      </nav>
+      <div class="mt-auto">
+        <a class="flex items-center gap-2 text-black hover:text-black font-bold" href="#">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Log out</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ml-[220px] h-screen overflow-y-auto w-[calc(100%-220px)] bg-[#f9f6e8] border border-black p-6 md:p-10 flex flex-col gap-8 z-20">
+      <!-- Profile title -->
+      <div class="mb-2">
+        <h1 class="font-bold text-3xl select-none">PROFILE</h1>
+      </div>
+
+      <!-- Trainer info and Skills -->
+      <div class="flex flex-col lg:flex-row gap-6">
+        <!-- Trainer Info -->
+        <section class="flex-1 bg-[#f5c72f] border border-black shadow-[3px_3px_0_0_black] p-6 flex flex-col md:flex-row gap-6">
+          <img alt="Profile Photo" class="border border-black w-[200px] h-[200px] object-cover flex-shrink-0" src="foto.jpg" />
+          <div class="flex flex-col flex-1 gap-4">
+            <div class="flex justify-between items-start">
+              <div>
+                <h2 class="font-bold text-2xl leading-tight">Devina Fitria Pangestuti</h2>
+                <p class="text-[13px]">devinafitriapngs@gmail.com</p>
+              </div>
+              <div class="flex gap-2">
+                <button class="border border-black w-9 h-9 flex items-center justify-center" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </button>
+                <button class="border border-black w-9 h-9 flex items-center justify-center" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <p class="text-[13px] leading-tight">
+              I am a final-year student of the Information Technology Study Program at Universitas Muhammadiyah Yogyakarta, with a strong interest
+              in Quality Assurance (QA) and system analysis. I am passionate about identifying and resolving software
+              issues while ensuring the best
+              possible user experience. Additionally, I pay close attention to project documentation, as I believe
+              well-structured documentation is
+              essential for maintaining system quality and consistency. My experience includes bug fixing, test
+              planning, manual software testing, and
+              creating structured project documentation. With these skills and knowledge, I am confident in my ability
+              to make a meaningful contribution
+              in the areas of testing and system analysis.
+            </p>
+          </div>
+        </section>
+
+        <!-- Skills and Achievements -->
+        <section class="w-full lg:w-[320px] flex flex-col gap-4">
+          <h3 class="font-bold text-xl mb-2 select-none">Skills, Achievements & Other Experience</h3>
+          <article class="border border-black p-4 flex gap-4 items-start bg-white card-scale">
+            <div class="border border-black p-3 flex items-center justify-center w-12 h-12">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="text-[13px]">
+              <h4 class="font-bold leading-tight">HardSkills</h4>
+              <p>Laravel, HTML, CSS, Javascript, Visual Paradigm, Trello, Microsoft Office</p>
+            </div>
+          </article>
+          <article class="border border-black p-4 flex gap-4 items-start bg-white card-scale">
+            <div class="border border-black p-3 flex items-center justify-center w-12 h-12">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="text-[13px]">
+              <h4 class="font-bold leading-tight">SoftSkills</h4>
+              <p>Discipline, Responsibility, Adaptability, Time management skill, Teamwork, Leadership</p>
+            </div>
+          </article>
+          <article class="border border-black p-4 flex gap-4 items-start bg-white card-scale">
+            <div class="border border-black p-3 flex items-center justify-center w-12 h-12">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="text-[13px]">
+              <h4 class="font-bold leading-tight">Achievements</h4>
+              <p>Earned a System Analyst certification from BNSP on February 14, 2025</p>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <!-- Education Section -->
+      <section class="flex flex-col gap-4">
+        <h3 class="font-bold text-3xl select-none mb-2">Education Level</h3>
+        <div class="flex flex-col md:flex-row gap-4">
+          <article class="border border-black p-4 w-full md:w-[280px] flex flex-col gap-2 bg-[#f9d5e5] card-scale">
+            <h4 class="font-bold text-[13px] select-none">Bachelor's Degree</h4>
+            <p class="text-[11px] leading-tight">
+              Bachelor of Information Technology, Universitas Muhammadiyah Yogyakarta, Aug 2021 - Present
+            </p>
+          </article>
+          <article class="border border-black p-4 w-full md:w-[280px] flex flex-col gap-2 bg-[#d0f0fd] card-scale">
+            <h4 class="font-bold text-[13px] select-none">High School</h4>
+            <p class="text-[11px] leading-tight">
+              SMAN 79 Jakarta
+            </p>
+          </article>
+          <article class="border border-black p-4 w-full md:w-[280px] flex flex-col gap-2 bg-[#fef3c7] card-scale">
+            <h4 class="font-bold text-[13px] select-none">Junior High School</h4>
+            <p class="text-[11px] leading-tight">
+              SMPN 57 Jakarta
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
